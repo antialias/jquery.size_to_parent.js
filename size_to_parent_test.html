@@ -1,0 +1,50 @@
+<style>
+.parent {
+	border:1px solid blue;
+}
+</style>
+
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js'></script>
+<script type='text/javascript' src='jquery.size_to_fit_parent.js'></script>
+
+<script>
+$(function() {
+	$(".sometext").size_to_fit_parent({min_fs:10, max_fs:80, debug:true, max_enlarge_scale:10});
+});
+</script>
+
+<div class='parent' style='width:175px;'>
+<div class="sometext" style="display:inline; font-size:5px">
+some text is in here
+</div>
+</div>
+
+<div class='parent' style='width:100px;'>
+<div class="sometext" style="display:inline; font-size:20px">
+some more is in here
+</div>
+</div>
+
+<div class='parent' style='width:200px;'>
+<div class="sometext" style="display:inline; font-size:50px">
+some more is in here
+</div>
+</div>
+
+<div class='parent' style='width:500px;'>
+<div class="sometext" style="display:inline; font-size:50px">
+some more is in here
+</div>
+</div>
+
+<div class='parent' style='width:450px;'>
+<div class="sometext" style="display:inline; font-size:5px">
+some more is in here
+</div>
+</div>
+
+<div class='parent' style='width:300px;'>
+<div class="sometext" style="display:inline; font-size:50px">
+some more is in here
+</div>
+</div>
