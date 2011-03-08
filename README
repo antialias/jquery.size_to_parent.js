@@ -1,0 +1,40 @@
+Author: Thomas Hallock github_contact@thomashallock.com
+Date: 8-March-2011
+
+Use size_to_parent to set the font size of a child element so that the width of the child element matches the parent element as closely as possible.
+
+Usage:
+
+$(".sometext").size_to_fit_parent({min_fs:10, max_fs:80, debug:true, max_enlarge_scale:10});
+
+Options:
+
+min_fs:
+	defaults to 3
+	The font size (in pixels) will never be set above this value
+
+max_fs:
+	defaults to 50
+	The font size (in pixels) will never be set below this value
+	
+max_enlarge_scale:
+	defaults to 10
+	If the parent element is larger than the child element, the font size will not be greater than max_enlarge_scale * the current font size.
+
+el_tol:
+	defaults to 0.009
+	This tolerance will be used when comparing the parent element's size to the child element's size to prevent an infinite loop
+	Higher values may lead to greater deviation between the final chile width and the final parent width.
+	
+converge_tol:
+	defaults to 0.00001
+	This tolerance will be used in the binary search algorithm for comparing min font size and max font size.
+	Higher values may lead to greater deviation between the final chile width and the final parent width.
+	
+white_space:
+	defaults to "nowrap"
+	The child element's 'white-space' css property is set to this. Values other than "nowrap" are untested.
+	
+debug:
+	defaults to false
+	Set to 1 or true to see debugging messages in the console. If using Firefox, requires firebug. Will break when used in Internet Explorer.
