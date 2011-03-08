@@ -9,42 +9,45 @@
 
 <script>
 $(function() {
-	$(".sometext").size_to_fit_parent({min_fs:10, max_fs:80, debug:true, max_enlarge_scale:10});
+	$(".sometext").size_to_fit_parent({min_fs:10, max_fs:80, max_enlarge_scale:10});
 });
 </script>
 
+using these options:
+<tt>{min_fs:10, max_fs:80, max_enlarge_scale:10}</tt>
+
 <div class='parent' style='width:175px;'>
 <div class="sometext" style="display:inline; font-size:5px">
-some text is in here
+parent is 175px, original font size is 5px
 </div>
 </div>
 
 <div class='parent' style='width:100px;'>
 <div class="sometext" style="display:inline; font-size:20px">
-some more is in here
+parent is 100px, original font size is 20px
 </div>
 </div>
 
 <div class='parent' style='width:200px;'>
 <div class="sometext" style="display:inline; font-size:50px">
-some more is in here
+parent is 200px, original font size is 50px
 </div>
 </div>
 
 <div class='parent' style='width:500px;'>
 <div class="sometext" style="display:inline; font-size:50px">
-some more is in here
+parent is 500px, original font size is 50px
 </div>
 </div>
 
 <div class='parent' style='width:450px;'>
 <div class="sometext" style="display:inline; font-size:5px">
-some more is in here
+parent is 450px, original font size is 5px
 </div>
 </div>
 
 <div class='parent' style='width:300px;'>
 <div class="sometext" style="display:inline; font-size:50px">
-some more is in here
+parent is 300px, original font size is 50px
 </div>
 </div>
